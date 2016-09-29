@@ -8,16 +8,19 @@
   },
   "scripts": {
     "test": "eslint src test && npm run mocha",
-    "start": "echo \"hello world\"",
+    "start": "node lib/index.js",
     "mocha": "mocha test/test.js"
   },
-  "main": "./lib/main.js",
+  "main": "./lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/bitovi/node-training"
   },
-  "dependencies": {},
+  "dependencies": {
+    "mime": "^1.3.4"
+  },
   "devDependencies": {
+    "chalk": "^1.1.3",
     "eslint": "^3.6.1",
     "eslint-config-airbnb": "^12.0.0",
     "eslint-plugin-import": "^2.0.0",
