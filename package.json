@@ -1,0 +1,23 @@
+{
+  "name": "node-training",
+  "version": "0.1.0",
+  "author": "Bitovi <info@bitovi.com>",
+  "description": "Server side JavaScript FTW!",
+  "engines" : { "node" : "0.10.0" },
+  "scripts": {
+    "test": "npm run mocha",
+    "start": "node lib/main.js",
+    "mocha": "mocha test.js"
+  },
+  "main": "./lib/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitovi/node-training"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "^3.1.0"
+  },
+  "license": "MIT"
+}
