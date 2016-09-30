@@ -7,9 +7,10 @@
     "node": "0.10.0"
   },
   "scripts": {
-    "test": "eslint src test && npm run mocha",
-    "start": "node lib/index.js",
-    "mocha": "mocha test/test.js"
+    "test": "npm run eslint && npm run mocha",
+    "start": "bin/start",
+    "mocha": "mocha test/test.js",
+    "eslint": "eslint **/*.js"
   },
   "main": "./lib/index.js",
   "repository": {
@@ -19,7 +20,8 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "mime": "^1.3.4"
+    "mime": "^1.3.4",
+    "request": "^2.75.0"
   },
   "devDependencies": {
     "chalk": "^1.1.3",
